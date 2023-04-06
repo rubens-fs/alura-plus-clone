@@ -1,0 +1,159 @@
+:root { /* Mais fácil de dar manutenção, pois você padroniza as cores */
+    --main-white: #FFFFFF;
+    --sec-gray: #C0C0C0;
+    --blue-botton: #167BF7;
+    --blue-botton-effect: #3c92fa;
+    --background-color: #00030C;
+    --main-font: 'Inter';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--main-white);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.main {
+    background-image: url("/img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.box__container {
+    margin: 0 6em;
+}
+
+.title__container {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.image__container {
+    margin: 1em 0 2em 0;
+}
+
+.button__container {
+    background-color: var(--blue-botton);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--main-white);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.button__container:hover {
+    background-color: var(--blue-botton-effect);
+    color: #000000;
+}
+
+.sec_button {
+    background-color: transparent ;
+    border: 2px solid var(--main-white);
+}
+
+.advice__container {
+    font-size: 12px;
+    color: var(--sec-gray);
+}
+
+.image__sec {
+    width: 80%;
+}
+
+.sec {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.title__description {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--main-white);
+    margin-bottom: 0.1em;
+}
+
+.text__description {
+    color: var(--sec-gray);
+}
+
+.button__sec {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.description__container {
+    padding: 2em;
+}
+
+.devices__title {
+    font-size: 48px;
+    color: var(--main-white);
+}
+
+.devices__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.devices {
+    text-align: center;
+}
+
+.item__list {
+    font-size: 32px;
+    color: var(--main-white);
+}
+
+.baseboard {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.baseboard__logo {
+    padding: 2.5em;
+}
+
+.baseboard__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.list__link a {
+    text-decoration: none;
+    color: var(--main-white);
+    margin-right: 1em;
+}
+
+.list__link a:hover {
+    color: var(--blue-botton);
+}
+
+.list__link a:active {
+    color: #EC2F46;
+}
+
+.baseboard__text {
+    margin: 1em 0;
+    color: var(--sec-gray);
+    font-size: 14px;
+}
